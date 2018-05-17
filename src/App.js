@@ -10,8 +10,16 @@ class App extends Component {
     }
     render() {
         return (
-            <Locations />
+            <Locations
+                clickHandler={this._locationClickHandler}
+            />
         );
+    }
+
+    _locationClickHandler = (location) => {
+        this.setState({
+            location: location
+        });
     }
 }
 
