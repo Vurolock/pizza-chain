@@ -3,17 +3,32 @@ import React from 'react';
 const Locations = (props) => {
 
     return (
-        <div className="location-list">
-            <div className="location">
-                Slice of Sicily{'\n'}New York City, NY
+        <React.Fragment>
+
+            <div className="location-select">
+                SELECT A LOCATION
             </div>
-            <div className="location">
-                Neapolitan Nibbles{'\n'}Chicago, IL
+
+            <div className="location-list">
+
+                <div className="location">
+                    Slice of Sicily<br />
+                    New York City, NY
+                </div>
+
+                <div className="location">
+                    Neapolitan Nibbles<br />
+                    Chicago, IL
+                </div>
+
+                <div className="location">
+                    Ruminating Rome<br />
+                    San Francisco, CA
+                </div>
+
             </div>
-            <div className="location">
-                Rumunating Rome{'\n'}San Francisco, CA
-            </div>
-        </div>
+
+        </React.Fragment>
     );
 }
 
