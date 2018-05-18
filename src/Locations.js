@@ -82,7 +82,7 @@ const Locations = (props) => {
             >
                 { location.name }
                 <br />
-                ({ location.city })
+                <span>({ location.city })</span>
             </div>
         );
     })

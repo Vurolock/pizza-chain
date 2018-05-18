@@ -47,7 +47,7 @@ class App extends Component {
 
     _pizzaClickHandler = (pizza, toppings) => {
         this.setState({
-            toppingsHeading: 'Toppings:',
+            toppingsHeading: 'Toppings',
             toppings: toppings
         });
     }

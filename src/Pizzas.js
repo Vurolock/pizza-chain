@@ -15,7 +15,7 @@ const Pizzas = (props) => {
             >
                 { pizza.name }
                 <br />
-                ({ pizza.type })
+                <span>({ pizza.type })</span>
             </div>
         );
     });
