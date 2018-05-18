@@ -19,12 +19,13 @@ class App extends Component {
             <React.Fragment>
                 <Locations
                     clickHandler={this._locationClickHandler}
-                    
+                    location={this.state.location}
                 />
                 <Pizzas
                     clickHandler={this._pizzaClickHandler}
                     pizzaHeading={this.state.pizzaHeading}
                     pizzas={this.state.pizzas}
+                    toppings={this.state.toppings}
                 />
                 <Toppings
                     toppingsHeading={this.state.toppingsHeading}
@@ -46,7 +47,7 @@ class App extends Component {
 
     _pizzaClickHandler = (pizza, toppings) => {
         this.setState({
-            toppingsHeading: 'Toppings:',
+            toppingsHeading: 'Toppings',
             toppings: toppings
         });
     }

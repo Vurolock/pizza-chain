@@ -3,15 +3,19 @@ import React from 'react';
 const Pizzas = (props) => {
     
     let pizzas = props.pizzas.map((pizza, i) => {
+        let pizzaClass = "button";
+        if (pizza.toppings === props.toppings) {
+            pizzaClass = "button active-button";
+        }
         return (
             <div
                 key={ i }
-                className="button"
+                className={ pizzaClass }
                 onClick={ () => props.clickHandler(i, pizza.toppings) }
             >
                 { pizza.name }
                 <br />
-                ({ pizza.type })
+                <span>({ pizza.type })</span>
             </div>
         );
     });
