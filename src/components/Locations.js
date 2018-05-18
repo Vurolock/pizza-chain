@@ -1,5 +1,5 @@
 import React from 'react';
-const franchises = require('./franchises.js');
+const franchises = require('../franchises.js');
 
 const Locations = (props) => {
 
