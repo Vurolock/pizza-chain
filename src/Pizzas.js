@@ -9,17 +9,18 @@ const Pizzas = (props) => {
                 className="button"
                 onClick={ () => props.clickHandler(i, pizza.toppings) }
             >
-                {pizza.name}
+                { pizza.name }
                 <br />
-                {pizza.type}
+                ({ pizza.type })
             </div>
         );
-    })
+    });
+
     return (
         <React.Fragment>
 
             <div className="option-select">
-                SELECT A PIZZA
+                { props.pizzaHeading }
             </div>
 
             <div className="button-list">

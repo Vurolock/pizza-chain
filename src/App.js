@@ -7,7 +7,9 @@ class App extends Component {
         super(props);
         this.state = {
             location: null,
+            pizzaHeading: '',
             pizzas: [],
+            toppingsHeading: '',
             toppings: []
         }
     }
@@ -16,9 +18,11 @@ class App extends Component {
             <React.Fragment>
                 <Locations
                     clickHandler={this._locationClickHandler}
+                    
                 />
                 <Pizzas
                     clickHandler={this._pizzaClickHandler}
+                    pizzaHeading={this.state.pizzaHeading}
                     pizzas={this.state.pizzas}
                 />
             </React.Fragment>
@@ -28,13 +32,16 @@ class App extends Component {
     _locationClickHandler = (location, pizzas) => {
         this.setState({
             location: location,
+            pizzaHeading: 'SELECT A PIZZA',
             pizzas: pizzas,
+            toppingsHeading: '',
             toppings: []
         });
     }
 
     _pizzaClickHandler = (pizza, toppings) => {
         this.setState({
+            toppingsHeading: 'TOPPINGS:',
             toppings: toppings
         });
     }

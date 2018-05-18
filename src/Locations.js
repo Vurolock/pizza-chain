@@ -76,9 +76,9 @@ const Locations = (props) => {
                 className="button"
                 onClick={ () => props.clickHandler(i, location.pizzas) }
             >
-                {location.name}
+                { location.name }
                 <br />
-                {location.city}
+                ({ location.city })
             </div>
         );
     })
