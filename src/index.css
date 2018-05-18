@@ -49,16 +49,22 @@ header {
     width: 170px;
     font-size: 25px;
     text-align: center;
-    background-color: #0095ff;
-    color: white;
     padding: 10px;
-    border: 3px solid #07c;
+    color: white;
+    background-color: #169eff;
+    border: 3px solid #0095ff;
     border-radius: 5px;
 }
 
 .button:hover {
     background-color: #07c;
+    border: 3px solid #07c;
     cursor: pointer;
+}
+
+.active-button, .active-button:hover {
+    background-color: #07c;
+    border: 3px solid black;
 }
 
 .toppings-list {

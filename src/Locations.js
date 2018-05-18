@@ -9,7 +9,7 @@ const franchises = [
             {
                 'type': 'Cheese',
                 'name': 'Palermo',
-                'toppings': ['No Toppings']
+                'toppings': ['No Toppings   ']
             },
             {
                 'type': 'Veggie', 
@@ -30,7 +30,7 @@ const franchises = [
             {
                 'type': 'Cheese',
                 'name': 'Soccavo',
-                'toppings': ['No Toppings']
+                'toppings': ['No Toppings   ']
             },
             {
                 'type': 'Veggie', 
@@ -51,7 +51,7 @@ const franchises = [
             {
                 'type': 'Cheese',
                 'name': 'Labaro',
-                'toppings': ['No Toppings']
+                'toppings': ['No Toppings   ']
             },
             {
                 'type': 'Veggie',
@@ -70,10 +70,14 @@ const franchises = [
 const Locations = (props) => {
     // Future franchises can be added to this array in order to easily expand the website
     let locations = franchises.map((location, i) => {
+        let locationClass = "button";
+        if (i === props.location) {
+            locationClass = "button active-button";
+        }
         return (
             <div
                 key={ i }
-                className="button"
+                className={ locationClass }
                 onClick={ () => props.clickHandler(i, location.pizzas) }
             >
                 { location.name }
