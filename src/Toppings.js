@@ -6,7 +6,6 @@ const Toppings = (props) => {
         return (
             <li
                 key={ i }
-                className="topping"
             >
             { topping }
             </li>
