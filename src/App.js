@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Locations from './Locations';
 import Pizzas from './Pizzas';
+import Toppings from './Toppings';
 
 class App extends Component {
     constructor(props) {
@@ -25,6 +26,10 @@ class App extends Component {
                     pizzaHeading={this.state.pizzaHeading}
                     pizzas={this.state.pizzas}
                 />
+                <Toppings
+                    toppingsHeading={this.state.toppingsHeading}
+                    toppings={this.state.toppings}
+                />
             </React.Fragment>
         );
     }
@@ -41,7 +46,7 @@ class App extends Component {
 
     _pizzaClickHandler = (pizza, toppings) => {
         this.setState({
-            toppingsHeading: 'TOPPINGS:',
+            toppingsHeading: 'Toppings:',
             toppings: toppings
         });
     }
