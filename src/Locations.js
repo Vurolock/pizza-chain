@@ -9,7 +9,7 @@ const franchises = [
             {
                 'type': 'Cheese',
                 'name': 'Palermo',
-                'toppings': ['none']
+                'toppings': ['No Toppings']
             },
             {
                 'type': 'Veggie', 
@@ -30,7 +30,7 @@ const franchises = [
             {
                 'type': 'Cheese',
                 'name': 'Soccavo',
-                'toppings': ['none']
+                'toppings': ['No Toppings']
             },
             {
                 'type': 'Veggie', 
@@ -51,7 +51,7 @@ const franchises = [
             {
                 'type': 'Cheese',
                 'name': 'Labaro',
-                'toppings': ['none']
+                'toppings': ['No Toppings']
             },
             {
                 'type': 'Veggie',
